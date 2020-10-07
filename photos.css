@@ -136,13 +136,11 @@ a:hover {
   grid-row: span 6;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 600px) {
   .photo-containers {
     grid-template-columns: 100%;
-  }
-
-  .gallery-item:hover .image img {
-    opacity: 1;
   }
 
   .w-1 {
@@ -191,10 +189,6 @@ a:hover {
 
   .h-6 {
     grid-row: span 6;
-  }
-
-  .side-tab {
-    display: inline-block;
   }
 }
 
