@@ -136,11 +136,13 @@ a:hover {
   grid-row: span 6;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .photo-containers {
     grid-template-columns: 100%;
-    margin: 25px;
-    margin-left: 28px;
+  }
+
+  .gallery-item:hover .image img {
+    opacity: 1;
   }
 
   .w-1 {
@@ -192,11 +194,11 @@ a:hover {
   }
 
   .side-tab {
-    display: none;
+    display: inline-block;
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
   .photo-containers {
     grid-template-columns: repeat(2, 1fr);
   }
