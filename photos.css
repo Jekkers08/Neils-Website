@@ -218,7 +218,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   .photo-containers {
     padding-right: 1em;
   }

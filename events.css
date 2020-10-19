@@ -141,6 +141,8 @@ a:hover {
 @media screen and (max-width: 600px) {
   .photo-containers {
     grid-template-columns: 100%;
+    margin: 0;
+    margin-left: 1.6em;
   }
 
   .w-1 {
@@ -168,32 +170,56 @@ a:hover {
   }
 
   .h-1 {
-    grid-row: span 6;
+    grid-row: span 3;
   }
 
   .h-2 {
-    grid-row: span 6;
+    grid-row: span 3;
   }
 
   .h-3 {
-    grid-row: span 6;
+    grid-row: span 3;
   }
 
   .h-4 {
-    grid-row: span 6;
+    grid-row: span 3;
   }
 
   .h-5 {
-    grid-row: span 6;
+    grid-row: span 3;
   }
 
   .h-6 {
-    grid-row: span 6;
+    grid-row: span 3;
+  }
+
+  .side-tab {
+    width: 100%;
+    display: flex;
+    position: static;
+    justify-content: center;
+  }
+
+  .photo-categories {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .tabs {
+    margin: 10px;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .photo-containers {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .photo-containers {
+    padding-right: 1em;
   }
 }
