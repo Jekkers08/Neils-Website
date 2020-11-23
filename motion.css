@@ -71,6 +71,8 @@ a:hover {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  animation-name: fadeIn;
+  animation-duration: 800ms;
 }
 
 .gallery-item .image img {
@@ -84,8 +86,7 @@ a:hover {
 }
 
 .gallery-item:hover .image img {
-  opacity: 0.7;
-  /* transform: scale(1.5); */
+  opacity: 0.9;
 }
 
 .w-1 {
@@ -150,6 +151,8 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 300ms;
 }
 
 #lightbox img {
@@ -244,5 +247,17 @@ a:hover {
     grid-gap: 8px;
     padding-left: 1.5em;
     padding-right: 1.8em;
+  }
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
   }
 }
