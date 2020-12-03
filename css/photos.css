@@ -236,7 +236,7 @@ a:hover {
   }
 
   .photo-categories {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-top: 100px;
   }
