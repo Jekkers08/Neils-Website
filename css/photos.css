@@ -176,6 +176,8 @@ a:hover {
     grid-template-columns: 100%;
     margin: 0;
     margin-left: 1.6em;
+    position: absolute;
+    /* margin-top: 7em; */
   }
 
   .w-1 {
@@ -230,18 +232,41 @@ a:hover {
     width: 100%;
     display: flex;
     position: static;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .photo-categories {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin-top: 100px;
   }
 
   .tabs {
     margin: 10px;
     text-align: center;
+  }
+
+  #logo {
+    width: 110px;
+    position: relative;
+    margin: auto;
+  }
+
+  .logo-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* margin-top: 34px; */
+    width: 100%;
+  }
+
+  .logo-image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
   }
 }
 
