@@ -175,7 +175,8 @@ a:hover {
   .photo-containers {
     grid-template-columns: 100%;
     margin: 0;
-    padding: 10px;
+    margin-left: 1.6em;
+    position: absolute;
   }
 
   .w-1 {
@@ -230,32 +231,58 @@ a:hover {
     width: 100%;
     display: flex;
     position: static;
-    justify-content: center;
   }
 
   .photo-categories {
-    display: flex;
+    display: none;
     flex-direction: column;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .show {
+    display: flex;
+    animation: growDown 400ms ease forwards;
+    transform-origin: top center;
   }
 
   .tabs {
     margin: 10px;
     text-align: center;
   }
+
+  #logo {
+    width: 110px;
+    position: relative;
+    margin: auto;
+  }
+
+  .logo-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .logo-image {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .photo-containers {
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 414px) {
   .photo-containers {
-    grid-gap: 8px;
-    padding-left: 1.5em;
-    padding-right: 1.8em;
+    padding-right: 1em;
   }
 }
 
@@ -280,5 +307,15 @@ a:hover {
   100%{
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes growDown {
+  0%{
+  transform: scaleY(0);
+  }
+
+  100%{
+    transform: scaleY(1);
   }
 }
