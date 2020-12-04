@@ -20,3 +20,7 @@ lightbox.addEventListener ('click', e => {
   if (e.target !== e.currentTarget) return;
   lightbox.classList.remove('active');
 })
+
+function dropDown(){
+  document.getElementById("dropDownMenu").classList.toggle("show");
+}

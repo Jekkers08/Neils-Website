@@ -177,7 +177,6 @@ a:hover {
     margin: 0;
     margin-left: 1.6em;
     position: absolute;
-    /* margin-top: 7em; */
   }
 
   .w-1 {
@@ -232,13 +231,19 @@ a:hover {
     width: 100%;
     display: flex;
     position: static;
-    /* justify-content: center; */
   }
 
   .photo-categories {
     display: none;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .show {
+    display: flex;
+    animation: growDown 400ms ease forwards;
+    transform-origin: top center;
   }
 
   .tabs {
@@ -258,7 +263,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    /* margin-top: 34px; */
     width: 100%;
   }
 
@@ -303,5 +307,15 @@ a:hover {
   100%{
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@keyframes growDown {
+  0%{
+  transform: scaleY(0);
+  }
+
+  100%{
+    transform: scaleY(1);
   }
 }
