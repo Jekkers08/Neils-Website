@@ -274,6 +274,30 @@ a:hover {
   }
 }
 
+@media screen and (min-width: 600px) and (max-width: 900px){
+   #logo {
+    width: 90px;
+    position: absolute;
+  } 
+
+   a:link {
+    font-size: 17px;
+  }
+
+  .tabs {
+    margin-bottom: 25px;
+  }
+
+  .side-tab {
+    position: absolute;
+  }
+
+.photo-categories {
+  margin-top: 160px;
+  }
+
+}
+  
 @media screen and (max-width: 1024px) {
   .photo-containers {
     grid-template-columns: repeat(2, 1fr);
