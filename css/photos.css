@@ -81,7 +81,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
   animation-name: fadeInUp;
-  animation-duration: 800ms;
+  animation-duration: 300ms;
 }
 
 .gallery-item .image img {
@@ -242,7 +242,7 @@ a:hover {
 
   .show {
     display: flex;
-    animation: growDown 400ms ease forwards;
+    animation: growDown 300ms ease forwards;
     transform-origin: top center;
   }
 
@@ -325,7 +325,7 @@ a:hover {
 @keyframes fadeInUp {
   0%{
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(30px);
   }
 
   100%{
