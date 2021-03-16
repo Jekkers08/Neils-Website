@@ -81,7 +81,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
   animation-name: fadeInUp;
-  animation-duration: 800ms;
+  animation-duration: 300ms;
 }
 
 .gallery-item .image img {
@@ -175,7 +175,7 @@ a:hover {
   .photo-containers {
     grid-template-columns: 100%;
     margin: 0;
-    margin-left: 1.6em;
+    /* margin-left: 1.6em; */
     position: absolute;
   }
 
@@ -242,7 +242,7 @@ a:hover {
 
   .show {
     display: flex;
-    animation: growDown 400ms ease forwards;
+    animation: growDown 300ms ease forwards;
     transform-origin: top center;
   }
 
@@ -274,7 +274,34 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 900px){
+  #logo {
+   width: 90px;
+   position: absolute;
+ } 
+
+  a:link {
+   font-size: 17px;
+ }
+
+ .tabs {
+   margin-bottom: 25px;
+ }
+
+ .side-tab {
+   position: absolute;
+ }
+
+.photo-categories {
+ margin-top: 160px;
+ }
+
+ .photo-containers {
+  grid-template-columns: 100%;
+}
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
   .photo-containers {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -301,7 +328,7 @@ a:hover {
 @keyframes fadeInUp {
   0%{
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(30px);
   }
 
   100%{
