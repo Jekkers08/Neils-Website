@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+body {
+  background: red;
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -169,7 +173,7 @@ a:hover {
   max-height: 80%;
 }
 
-/* Media Queries */
+Media Queries
 
 @media screen and (max-width: 600px) {
   .photo-containers {
@@ -310,7 +314,7 @@ a:hover {
   }
 }
 
-/* Animations */
+Animations
 
 @keyframes fadeIn {
   0%{
@@ -342,4 +346,4 @@ a:hover {
   100%{
     transform: scaleY(1);
   }
-}
+} */
