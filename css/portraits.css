@@ -123,8 +123,20 @@ table {
   border-spacing: 0;
 }
 
+/* Body */
+
 body {
   font-family: "Oswald", sans-serif;
+  background-color: black;
+}
+
+header {
+  position: fixed;
+}
+
+.photo-categories {
+  background-color: red;
+  position: absolute;
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
