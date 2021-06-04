@@ -1,26 +1,33 @@
-const lightbox = document.createElement('div');
-lightbox.id = 'lightbox';
-document.body.appendChild(lightbox);
+let elem = document.querySelector(".grid");
+let msnry = new Masonry(elem, {
+  // options
+  itemSelector: ".grid-item",
+  columnWidth: 160,
+});
 
-const images = document.querySelectorAll('img:not(#logo)');
+// const lightbox = document.createElement('div');
+// lightbox.id = 'lightbox';
+// document.body.appendChild(lightbox);
 
-images.forEach(image => {
-  image.addEventListener('click', e => {
-    lightbox.classList.add('active');
-    const img = document.createElement('img');
-    img.src = image.src;
-    while (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild);
-    }
-    lightbox.appendChild(img);
-  })
-})
+// const images = document.querySelectorAll('img:not(#logo)');
 
-lightbox.addEventListener ('click', e => {
-  if (e.target !== e.currentTarget) return;
-  lightbox.classList.remove('active');
-})
+// images.forEach(image => {
+//   image.addEventListener('click', e => {
+//     lightbox.classList.add('active');
+//     const img = document.createElement('img');
+//     img.src = image.src;
+//     while (lightbox.firstChild) {
+//       lightbox.removeChild(lightbox.firstChild);
+//     }
+//     lightbox.appendChild(img);
+//   })
+// })
 
-function dropDown(){
-  document.getElementById("dropDownMenu").classList.toggle("show");
-}
+// lightbox.addEventListener ('click', e => {
+//   if (e.target !== e.currentTarget) return;
+//   lightbox.classList.remove('active');
+// })
+
+// function dropDown(){
+//   document.getElementById("dropDownMenu").classList.toggle("show");
+// }
