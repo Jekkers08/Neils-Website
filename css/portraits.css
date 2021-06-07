@@ -172,26 +172,22 @@ a:visited {
 
 .grid {
   margin-left: 14.65rem;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
 }
 
 .grid-item {
-  width: 30%;
+  width: 1000px;
+  margin-bottom: 2.2rem;
+  margin-left: 5rem;
 }
 
 .grid-item img {
-  width: 100%;
+  width: 1000px;
+  margin-top: 2.2rem;
 }
 
-/* .grid-item {
-  margin-left: 8rem;
-  margin-top: 2.3rem;
-} */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
-
-* {
-  box-sizing: border-box;
-}
+/* 
 
 body {
   margin: 0;
