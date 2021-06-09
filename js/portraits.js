@@ -2,8 +2,10 @@ let elem = document.querySelector(".grid");
 let msnry = new Masonry(elem, {
   // options
   itemSelector: ".grid-item",
-  columnWidth: 180,
+  columnWidth: 120,
 });
+
+msnry.layout();
 
 // const lightbox = document.createElement("div");
 // lightbox.id = "lightbox";
