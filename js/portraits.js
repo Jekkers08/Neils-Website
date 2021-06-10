@@ -2,7 +2,7 @@ let elem = document.querySelector(".grid");
 let msnry = new Masonry(elem, {
   // options
   itemSelector: ".grid-item",
-  columnWidth: 120,
+  columnWidth: 80,
 });
 
 msnry.layout();
